@@ -1,2 +1,19 @@
-# -C-Write-a-C-program-to-tokenize-arithmetic-expressions-with-integers-and-
-C++ Program: Tokenizing Arithmetic Expressions  Goal: Tokenize expressions containing:  Integers  Operators: +, *, /
+#C++ Program: Tokenizing Arithmetic Expressions
+
+Goal: Tokenize expressions containing:
+
+Integers
+
+Operators: +, *, /
+
+Example Input
+12+34*5/2
+
+Output Tokens
+INTEGER(12)
+PLUS
+INTEGER(34)
+MULTIPLY
+INTEGER(5)
+DIVIDE
+INTEGER(2)
