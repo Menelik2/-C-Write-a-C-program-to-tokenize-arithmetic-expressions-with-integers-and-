@@ -1,19 +1,22 @@
-#C++ Program: Tokenizing Arithmetic Expressions
+# Arithmetic Expression Tokenizer (C++)
 
-Goal: Tokenize expressions containing:
+This project implements a simple **lexical analyzer (tokenizer)** for arithmetic expressions.
 
-Integers
+## Features
+- Integer numbers (multi-digit)
+- Operators: +  -  *  /
+- Parentheses: ( )
+- Ignores whitespace
+- Suitable for Compiler Design (Lexical Analysis)
 
-Operators: +, *, /
+## Token Types
+- INTEGER
+- PLUS, MINUS, MUL, DIV
+- LPAREN, RPAREN
+- END
 
-Example Input
-12+34*5/2
+## Build & Run
 
-Output Tokens
-INTEGER(12)
-PLUS
-INTEGER(34)
-MULTIPLY
-INTEGER(5)
-DIVIDE
-INTEGER(2)
+```bash
+g++ main.cpp tokenizer.cpp -o tokenizer
+./tokenizer
