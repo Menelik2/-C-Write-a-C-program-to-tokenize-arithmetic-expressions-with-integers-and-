@@ -1,18 +1,22 @@
+
 #include <iostream>
+#include <string>
 #include "tokenizer.h"
 
+using namespace std;
+
 int main() {
-    std::string input;
-    std::cout << "Enter arithmetic expression: ";
-    std::getline(std::cin, input);
+    string input;
+    cout << "Enter arithmetic expression: ";
+    getline(cin, input);
 
     Lexer lexer(input);
     Token token;
 
-    std::cout << "\nTokens:\n";
+    cout << "\nTokens:\n";
     do {
         token = lexer.get_next_token();
-        std::cout << "Token(" << token.type << ", " << token.value << ")\n";
+        cout << "Token(" << token.type << ", " << token.value << ")\n";
     } while (token.type != END);
 
     return 0;
